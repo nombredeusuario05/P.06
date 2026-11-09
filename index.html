@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P6</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary-color: #FF0A8C;
+            --secundary-color: #FF0000;
+            --terciary-color: #FFFFFF;
+        }
+
+        .roboto {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--terciary-color);
+        }
+
+        #mi {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background-color: var(--primary-color);
+        }
+
+        #mi div {
+            display: flex;
+            flex: 1;
+            padding: 4px;
+            color: var(--terciary-color);
+        }
+
+        #mi div:first-child {
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        #mi div:last-child {
+            flex-direction: row-reverse;
+        }
+
+        h1 {
+            font-size: 96px;
+            font-weight:normal;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight:normal;
+            text-align: end;
+        }
+
+        #rojo {
+            flex: 1;
+            background-color: var(--secundary-color);
+        }
+
+        #rosa {
+            flex: 1;
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="mi">
+            <div class="roboto">
+                <h1>Mar</h1>
+            </div>
+            <div class="roboto">
+                <h1>Eulogio</h1>
+            </div>
+        </div>
+        <div id="rojo"></div>
+        <div id="rosa" class="roboto">
+            <h2><a href="https://www.figma.com/design/FJcMh6lCOq1fTWytbhKtMN/Untitled?node-id=13-2263&t=wY9HcKhGCxgVtHvQ-1">Figma</a></h2>
+        </div>
+    </div>
+</body>
+</html>
